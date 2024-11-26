@@ -1,6 +1,13 @@
 package net.benfro.misc.lombok.data;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@RequiredArgsConstructor
 public class Person {
-    private String id;
-    private String fullName;
+    private int age;
+    private final String socialSecurityNumber;
 }
