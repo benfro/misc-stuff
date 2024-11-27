@@ -7,5 +7,6 @@ import lombok.Getter;
 @Getter
 public class Person {
     private String id;
-    private String fullName;
+    @Builder.Default
+    private String fullName = "Jane Doe";
 }

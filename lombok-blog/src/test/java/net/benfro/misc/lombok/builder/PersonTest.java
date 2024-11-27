@@ -15,4 +15,13 @@ class PersonTest {
         assertEquals("id", person.getId());
         assertEquals("fullName", person.getFullName());
     }
+
+    @Test
+    void testBuilderDefaults() {
+        var person= Person.builder()
+            .id("id")
+            .build();
+        assertEquals("id", person.getId());
+        assertEquals("Jane Doe", person.getFullName());
+    }
 }
